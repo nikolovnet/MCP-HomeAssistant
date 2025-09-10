@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mcp-homeassistant:
+    build: .
+    container_name: mcp-homeassistant
+    env_file:
+      - .env
+    volumes:
+      - ./.env:/app/.env:ro
+    # MCP servers typically communicate via stdio, so no ports are exposed
+    # If you need to expose ports, uncomment the following:
+    # ports:
+    #   - "8000:8000"
+    restart: unless-stopped
+    # Optional: Add network mode if you need to access host network
+    # network_mode: host

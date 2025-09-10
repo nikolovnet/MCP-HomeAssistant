@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "home-assistant": {
+      "command": "docker",
+      "args": [
+        "exec",
+        "-i",
+        "mcp-homeassistant",
+        "python",
+        "mcp_server.py"
+      ]
+    }
+  }
+}

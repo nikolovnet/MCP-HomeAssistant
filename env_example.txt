@@ -1,0 +1,11 @@
+# Home Assistant Configuration
+# Your Home Assistant instance URL
+HOME_ASSISTANT_URL=http://192.168.200.111:8123
+
+# Home Assistant Long-Lived Access Token
+# Get this from: Home Assistant > Profile > Long-Lived Access Tokens
+# Create a new token and paste it here
+HOME_ASSISTANT_TOKEN=your_long_lived_access_token_here
+
+# SSL Verification (set to false if using self-signed certificates)
+VERIFY_SSL=true
